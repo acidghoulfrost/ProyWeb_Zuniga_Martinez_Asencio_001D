@@ -1,0 +1,108 @@
+
+.col-sm-8 {
+    width: 25%;
+    height: 25%;
+    box-shadow: 25%;
+}
+
+body{
+    background-color: #3d0a91; 
+
+  }
+  
+  .container-fluid{
+    background-color: #8540f5;
+  }
+.color{
+    background-color: #8540f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+    background-color: #6610f2;
+}
+
+p{
+    color: #e0cffc;
+}
+h2{
+    color: #e0cffc;
+    text-align: center;
+}
+li{
+    color: #e0cffc;
+}
+
+.nav-link {
+    color: #e0cffc;
+}
+
+.subtitulos {
+    background-color: #8540f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parrafos {
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-lg {
+    width: 50%;
+    height: 50%;
+}
+
+footer {
+    align-items: center;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+/*AJUSTAR CONTENIDO GALERIA*/
+/* Contenedor del álbum */
+.album .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Columnas individuales */
+
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 200px; /* Altura fija para mantener consistencia */
+    object-fit: cover; /* Ajuste proporcional sin distorsión */
+}
+
+/* Texto de descripción */
+.card-text {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
