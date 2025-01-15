@@ -6,6 +6,7 @@
     <title>Inicio Sesion</title>
     <link rel="stylesheet" href="/css/miestilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="img/logo" href="img/logo.png">
 </head>
 <body>
     <!--BARRA DE NAVEGACION-->
@@ -57,24 +58,33 @@
       
                 <form style="width: 23rem;">
       
-                  <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
-      
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example18">Email address</label>
+                  <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicio</h3>
+                  <!--CORREO-->
+                  <div class="formulario__grupo form-outline mb-4" id="grupo__correo">
+                    <label for="correo" class="formulario__label form-label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                      <input type="email" class="formulario__input form-control form-control-lg" name="correo" id="correo">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones, @  y guion bajo.</p>
+                  </div>
+
+                  <div class="formulario__grupo form-outline mb-4" id="grupo__password">
+                    <label for="password" class="formulario__label form-label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                      <input type="password" class="formulario__input form-control form-control-lg" name="password" id="password">
+                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                   </div>
       
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="form2Example28" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example28">Password</label>
+                  <div class="formulario__grupo formulario__grupo-btn-enviar pt-1 mb-4">
+                    <button type="submit" class="formulario__btn btn btn-info btn-lg btn-block">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                   </div>
-      
-                  <div class="pt-1 mb-4">
-                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-block" type="button">Login</button>
-                  </div>
-      
-                  <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                  <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
+
+                  <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Olvido su contraseña?</a></p>
+                  <p>No tienes <a href="registro.html" class="link-info">Registrate aqui</a></p>
       
                 </form>
       
@@ -89,5 +99,8 @@
         </div>
       </section>
 
+
+      <script src="js/formulario.js"></script>
+      <script src="#" crossorigin="anonymous"></script>
 </body>
 </html>
